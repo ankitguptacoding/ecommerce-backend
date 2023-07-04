@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-
+console.log("process.env.MONGO_URL",process.env.MONGO_URL)
 //default url 
 app.use('/', router,routerProduct);
 
